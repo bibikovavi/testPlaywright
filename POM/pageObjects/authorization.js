@@ -15,7 +15,7 @@ class Authorization {
 
         getLanguageDropdown: () => this.page.locator(".dropdown-toggle"),
         getEnglishLanguage: () => this.page.getByText("English"),
-        // getRussianLanguage: () => this.page.getByText("Русский"),
+        getRussianLanguage: () => this.page.locator("[class='fw-bold']"),
 
         getLoginText: () => this.page.locator(".h4.mb-3.fw-normal"),
         getEmailText: () => this.page.locator("[for='floatingInput']"),
